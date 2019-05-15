@@ -1,0 +1,44 @@
+/*CSS*/
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+body {
+  background-color: #3983DF;
+}
+.title {
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+  font-size: 60px;
+  color: rgb(46, 254, 7);
+}
+#carousel {
+  /*wyśrodkowanie div'a horyzontalnie & wertykalnie*/
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*rozmiary div'a (takie jak elementów z listy)*/
+  width: 400px;
+  height: 300px;
+  /*ramka*/
+  border-color: #FFF;
+  border-style: solid;
+  /*rozwiązanie 'wylewania' się obrazków poza div'a*/
+  overflow: hidden;
+}
+ul {
+  /*szerokość listy = liczba elem. w karuzeli x szerokość 1 elementu*/
+  width: 2000px;
+  /*usunięcie kropek z listy*/
+  list-style-type: none;
+  /*Dopasowanie elementów listy do div'a*/
+  padding: 0;
+  margin: 0;
+}
+li {
+  width: 400px;
+  height: 300px;
+  /*list-style: none;*/
+  /*'płynność' przechodzenia obrazków*/
+  float: left;
+}
